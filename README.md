@@ -1,5 +1,5 @@
 # spring-security-basics
-The project consists of a REST API secured by Spring Security.
+The project demonstrates the very basics of securing of a REST API using Spring Security.
 
 Instead of the default out of the box login page which Spring Security provides, this project implements a custom login page.
 
