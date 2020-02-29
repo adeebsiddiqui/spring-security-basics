@@ -15,6 +15,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
             .formLogin()
                 .loginPage("/login") //This is needed to allow custom login page to be rendered
-                .permitAll();
+                .permitAll()
+                .defaultSuccessUrl("/spring-security-basics/success", true);
     }
 }
