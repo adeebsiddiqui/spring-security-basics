@@ -13,7 +13,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .csrf().disable()
             .authorizeRequests()
-                .antMatchers("/").permitAll() //this gives access to index.html
+                .antMatchers("/").permitAll() //this gives access to index.html without authentication
+                /** https://stackoverflow.com/questions/69835/how-do-i-use-nant-ant-naming-patterns */
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
